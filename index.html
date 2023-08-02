@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taste to you</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
+    <link rel="stylesheet" href="styleeins.css">
+    <link rel="stylesheet" href="stylezwei.css">
+    <link rel="stylesheet" href="styledrei.css">
+    <script src="vars.js"></script>
+    <script src="scripteins.js"></script>
+    <script src="scriptzwei.js"></script>
+</head>
+
+<body onload="start()">
+    <div id="pay" class="pay"></div>
+    <section class="middle" id="middle">
+        <section class="restaurant" id="restaurant">
+            <div class="restaurant_img">
+                <div class="div_ak_logo"><img src="img/ak/logo_465x320.avif" alt="" class="ak_logo"></div>
+            </div>
+            <div class="restaurant_heading">
+                <h1>Anatolische Küche</h1>
+                <div class="restaurant_heading_right">
+                    <div class="info"></div>
+                    <div class="favorite"></div>
+                </div>
+            </div>
+            <div class="restaurant_sub_heading">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="half_star"></div>
+                <div class="rating">23 Bewertungen</div>
+            </div>
+            <div class="restaurant_sub_sub_heading">
+                <div class="time"></div>Lieferung in 40-50 min<div class="circle"></div>
+                <div class="bike"></div>
+                <div class="green">Kostenlos</div>
+                <div class="circle"></div>
+                <div class="shopping"></div>Min. 10,00 €<div class="circle"></div>
+                <div class="info_small"></div> Servicegebühr 0,89 €
+            </div>
+            <div class="restaurant_text">Bei diesem Restaurant kannst du Stempel sammeln. Stelle beim Bestellabschluss
+                bitte sicher, dass du dich für unseren Newsletter angemeldet hast, um deine Stempel per E-Mail zu
+                erhalten.</div>
+            <div class="anchor_row" id="anchor_row">
+            </div>
+            <div class="menu" id="menu">
+            </div>
+        </section>
+        <section class="shopping_cart" id="shopping_cart">
+            <div class="cart_heading">Warenkorb</div>
+            <div class="cart_main" id="cart_main"></div>
+            <div class="cart_sum" id="cart_sum"></div>
+        </section>
+    </section>
+    <header id="header_element">
+        <img class="taste_logo" src="img/logo/tastetoyou.png" alt="">
+        <div class="speisekarte">Speisekarte</div>
+        <img class="burgermenu" src="img/icons/burgermenu.svg" alt="">
+    </header>
+    <footer id="footer_element">
+        &copy; 2023 Henrik Hefelmann
+    </footer>
+    <section class="mobile_cart" id="mobile_cart"></section>
+    <div class="close_mobile_cart" id="close_mobile_cart" onclick="closeMobileCart()"></div>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+@font-face {
+    font-family: noto_regular;
+    src: url(font/woff2/NotoSans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: noto_bold;
+    src: url(font/woff2/NotoSans-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: noto_extrabold;
+    src: url(font/woff2/NotoSans-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: noto_black;
+    src: url(font/woff2/NotoSans-Black.woff2) format('woff2');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: noto_regular, sans-serif;
+    font-size: 13px;
+    color: rgb(36, 46, 48);
+    word-wrap: break-word;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    background-color: rgb(239, 237, 234);
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 128px;
+}
+
+.taste_logo {
+    border-radius: 15px;
+    width: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.burgermenu {
+    margin-right: 45px;
+    width: 30px;
+    border-radius: 50%;
+    border: 8px solid white;
+    cursor: pointer;
+
+}
+
+.burgermenu:hover {
+    background-color: rgb(239, 237, 234);
+    border: 8px solid rgb(239, 237, 234);
+}
+
+.middle {
+    display: block;
+    position: relative;
+    top: 70px;
+    left: 0;
+    max-width: calc(100vw - 361px);
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.restaurant_img {
+    display: flex;
+    background-image: url(img/ak/31_turkish_11.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+}
+
+.restaurant_heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.restaurant_heading_right {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.restaurant_icons {
+    width: 200px;
+}
+
+h1 {
+    font-family: noto_black, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.ak_logo {
+    width: 62px;
+    height: fit-content;
+}
+
+.div_ak_logo {
+    width: 72px;
+    height: 72px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(239, 237, 234);
+    border-radius: 10px;
+    margin-bottom: -18px;
+}
+
+.info {
+    background-image: url(img/icons/info_black_24dp.svg);
+    background-color: rgb(245, 243, 241);
+    border: 10px solid rgb(245, 243, 241);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.info:hover {
+    background-color: rgb(215, 213, 212);
+    border: 10px solid rgb(215, 213, 212);
+}
+
+.favorite {
+    background-image: url(img/icons/favorite_border_black_24dp.svg);
+    background-color: rgb(245, 243, 241);
+    border: 10px solid rgb(245, 243, 241);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.favorite:hover {
+    background-color: rgb(215, 213, 212);
+    border: 10px solid rgb(215, 213, 212);
+}
+
+.restaurant_sub_heading {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.star {
+    background-image: url(img/icons/star_black_24dp.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.half_star {
+    background-image: url(img/icons/star_half_black_24dp.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.shopping_cart {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    top: 70px;
+    min-width: 344px;
+    min-height: 100%;
+    background-color: white;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 10px;
+    color: #3c4c4f;
+    cursor: pointer;
+}
+
+.rating:hover {
+    text-decoration: none;
+}
+
+.restaurant_sub_sub_heading {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.time {
+    background-image: url(img/icons/schedule_black_24dp.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.circle {
+    background-image: url(img/icons/circle-solid.svg);
+    background-size: 4px 4px;
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bike {
+    background-image: url(img/icons/pedal_bike_black_24dp.svg);
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.green {
+    color: #017a39;
+}
+
+.shopping {
+    background-image: url(img/icons/shopping_bag_black_24dp.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.info_small {
+    background-image: url(img/icons/info_black_24dp.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.restaurant_text {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.anchor_row {
+    position: relative;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    min-width: 100%;
+}
+
+.anchor_row_sub {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-width: calc(100vw - 361px);
+}
+
+.anchor_row_sub_sub {
+    display: flex;
+    position: relative;
+    gap: 15px;
+    width: max-content;
+    transition: all 0.25s ease-in-out;
+}
+
+.search {
+    display: flex;
+    position: relative;
+    background-image: url(img/icons/magnifying-glass-solid.svg);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    min-width: 50px;
+    height: 50px;
+    background-color: rgb(245, 243, 241);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.search:hover {
+    background-color: rgb(239, 237, 234);
+}
+
+.searchfield {
+    display: flex;
+    background: none;
+    border: 1px solid rgb(140, 153, 155);
+    border-radius: 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 40px;
+    outline: none;
+    padding: 0;
+    min-width: calc(100vw - 530px);
+    padding: 5px 20px;
+    font-size: 15px;
+}
+
+.anchor_left {
+    display: flex;
+    position: relative;
+    background-image: url(img/icons/arrow_back_ios_black_24dp.svg);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    min-width: 50px;
+    height: 50px;
+    background-color: rgb(245, 243, 241);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.anchor_left:hover {
+    background-color: rgb(239, 237, 234);
+}
+
+.anchor_right {
+    display: flex;
+    position: relative;
+    background-image: url(img/icons/arrow_forward_ios_black_24dp.svg);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    min-width: 50px;
+    height: 50px;
+    background-color: rgb(245, 243, 241);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.anchor_right:hover {
+    background-color: rgb(239, 237, 234);
+}
+
+
+.jump {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(36, 46, 48);
+    font-family: noto_bold, sans-serif;
+    background-color: rgb(245, 243, 241);
+    border-radius: 20px;
+    height: 40px;
+}
+
+.jump:hover {
+    background-color: rgb(239, 237, 234);
+}
