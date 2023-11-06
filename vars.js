@@ -54,7 +54,7 @@ let menu =
                 {
                     'name': 'Alkoholfreie Getränke',
                     'anchor': 'drinks',
-                    'img': 'tuerkisch_ayran..jpg',
+                    'img': 'tuerkisch_ayran.jpg',
                     'members': [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
                     'offset': 0,
                 },
